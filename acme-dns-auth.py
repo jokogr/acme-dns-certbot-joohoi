@@ -7,9 +7,9 @@ import sys
 ### EDIT THESE: Configuration values ###
 
 # URL to acme-dns instance
-ACMEDNS_URL = "https://auth.acme-dns.io"
+ACMEDNS_URL = os.environ["ACMEDNS_URL"]
 # Path for acme-dns credential storage
-STORAGE_PATH = "/etc/letsencrypt/acmedns.json"
+STORAGE_PATH = os.environ["STORAGE_PATH"]
 # Whitelist for address ranges to allow the updates from
 # Example: ALLOW_FROM = ["192.168.10.0/24", "::1/128"]
 ALLOW_FROM = []
